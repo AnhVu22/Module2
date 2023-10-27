@@ -10,11 +10,10 @@ public class PrintShape {
         System.out.println("Draw the rectangle");
         System.out.println("Draw the right triangle - bottom.left");
         System.out.println("Draw the right triangle - top.left");
-        choice = input.nextInt();
-    }
+            }
     switch (choice) {
         case 1:
             System.out.println("Draw the rectangle");
-            
+
     }
 }
