@@ -1,4 +1,4 @@
-package ss02_loop_array;
+package ss02_loop_java;
 
 import java.util.Scanner;
 
