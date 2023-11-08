@@ -22,6 +22,9 @@ public class ConcatArray {
         }
         System.out.println("Output Array 1: " + Arrays.toString(array1));
         System.out.println("Output Array 2: " + Arrays.toString(array2));
-
+        int[] concatArray = new int[array1.length + array2.length];
+        System.arraycopy(array1, 0, concatArray, 0, array1.length);
+        System.arraycopy(array2, 0, concatArray, array1.length, array2.length);
+        System.out.println("Output Concat Array: " + Arrays.toString(concatArray));
     }
 }
