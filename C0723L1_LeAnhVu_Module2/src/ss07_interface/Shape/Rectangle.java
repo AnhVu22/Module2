@@ -1,19 +1,9 @@
-package ss07_interface.Resizeable;
+package ss07_interface.Shape;
 
 public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
-
-    public Rectangle() {
-    }
-
     public Rectangle(double width, double length) {
-        this.width = width;
-        this.length = length;
-    }
-
-    public Rectangle(double width, double length, String color, boolean filled) {
-        super(color, filled);
         this.width = width;
         this.length = length;
     }
@@ -33,27 +23,22 @@ public class Rectangle extends Shape {
     public void setLength(double length) {
         this.length = length;
     }
-
     public double getArea() {
-        return width * this.length;
+        return width*this.length;
     }
-
     public double getPerimeter() {
         return 2 * (width + this.length);
     }
 
     @Override
     public String toString() {
-        return "A Rectangle with width="
-                + getWidth()
-                + " and length="
-                + getLength()
-                + ", which is a subclass of "
-                + super.toString();
+        return "Rectangle{" +
+                "width=" + width +
+                ", length=" + length +
+                '}';
     }
-    @Override
     public void resize(double percent) {
-        this.setWidth(this.getWidth() * (1 + percent/100));
-        this.setLength(this.getLength() * (1 + percent/100));
+        setLength(getLength()*(1 + percent));
+        setWidth(getWidth()*(1 + percent));
     }
 }
