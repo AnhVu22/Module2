@@ -1,4 +1,4 @@
-package ss10_arraylist;
+package ss10_arraylist_linkedlist.ArrayList;
 
 import java.util.Arrays;
 

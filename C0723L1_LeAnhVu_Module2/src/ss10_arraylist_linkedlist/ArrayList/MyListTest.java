@@ -1,4 +1,4 @@
-package ss10_arraylist;
+package ss10_arraylist_linkedlist.ArrayList;
 
 public class MyListTest {
     public static void main(String[] args) {
