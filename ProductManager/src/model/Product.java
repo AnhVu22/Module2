@@ -1,7 +1,5 @@
 package model;
 
-import java.util.Objects;
-
 public class Product {
     private int id;
     private String name;
@@ -56,9 +54,4 @@ public class Product {
                 ", price=" + price +
                 '}';
     }
-//    @Override
-//    public boolean equals(Object o) {
-//        Product product = (Product) o;
-//        return Objects.equals(this.name, product.getName());
-//    }
 }

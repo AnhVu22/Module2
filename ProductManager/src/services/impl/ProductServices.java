@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class ProductServices implements IProductServices {
     // khai báo Repo
-    private IProductRepository productRepository = new ProductRepository();
+    private final IProductRepository productRepository = new ProductRepository();
     @Override
     public ArrayList<Product> getAll() {
         return productRepository.getAll();

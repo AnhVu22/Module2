@@ -1,4 +1,4 @@
-package ss11_stack_queue;
+package ss11_stack_queue.ReverseStack;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -26,9 +26,16 @@ public class ReverseStack {
         }
         System.out.println(Arrays.toString(array));
 //        reverse string array
-        String str = new String();
-        String newStr = "";
-        
+        String str = "This is a Stack";
+        Stack<Character> wStack = new Stack<>();
+        for (int i = 0; i < str.length(); i++) {
+            wStack.push(str.charAt(i));
+        }
+        System.out.println(wStack);
+        for (int i = 0; i < str.length(); i++) {
+            wStack.pop();
+        }
+        System.out.println(wStack);
     }
 }
 

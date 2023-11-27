@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class View {
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
     private static final int DISPLAY = 1;
     private static final int ADD = 2;
     private static final int DELETE = 3;
     private static final int UPDATE = 4;
     private static final int SEARCH = 5;
-    private static ProductController productController = new ProductController();
+    private static final ProductController productController = new ProductController();
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -69,8 +69,7 @@ public class View {
         double price = Double.parseDouble(scanner.nextLine());
         System.out.println("Nhập mô tả sản phẩm: ");
         String description = scanner.nextLine();
-        Product products = new Product(id, name, description, price);
-        return products;
+        return new Product(id, name, description, price);
     }
     // delete method
     public static void delete() {
