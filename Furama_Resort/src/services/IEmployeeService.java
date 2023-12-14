@@ -3,7 +3,23 @@ package services;
 import model.Person.Employee;
 
 public interface IEmployeeService extends Service{
-    void addEmployee(Employee employee);
-    void displayListEmployee(String employee);
-    void editEmployee(String employee);
+    @Override
+    default void displayInfo() {
+
+    }
+
+    @Override
+    default void addNew() {
+
+    }
+
+    @Override
+    default void edit() {
+
+    }
+
+    @Override
+    default void delete() {
+
+    }
 }

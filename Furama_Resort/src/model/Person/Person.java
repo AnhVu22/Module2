@@ -3,19 +3,17 @@ package model.Person;
 import java.util.Date;
 
 public abstract class Person {
-    protected String id;
-    protected String name;
+    protected String id, name, gender, emailAddress;
     protected Date dateOfBirth;
-    protected String gender;
-    protected int idNumber;
-    protected int phoneNumber;
-    protected String emailAddress;
-    public abstract String showInfo();
+    protected int idNumber, phoneNumber;
+//    public abstract String showInfo();
 
     public Person() {
     }
 
-    public Person(String id, String name, Date dateOfBirth, String gender, int idNumber, int phoneNumber, String emailAddress) {
+    public Person(String id, String name,
+                  Date dateOfBirth, String gender,
+                  int idNumber, int phoneNumber, String emailAddress) {
         this.id = id;
         this.name = name;
         this.dateOfBirth = dateOfBirth;

@@ -17,25 +17,28 @@ public class House extends Facility {
         this.otherExclusive = otherExclusive;
     }
 
-    public House(String id, String serviceType, double usableArea, double rentCost, int amountGuests, String rentalType, String roomStandard, int floors, String otherExclusive) {
-        super(id, serviceType, usableArea, rentCost, amountGuests, rentalType);
+    public House(String id, String serviceType,
+                 double usableArea, double rentCost,
+                 int maxAmountGuest, String rentalType,
+                 String roomStandard, int floors, String otherExclusive) {
+        super(id, serviceType, usableArea, rentCost, maxAmountGuest, rentalType);
         this.roomStandard = roomStandard;
         this.floors = floors;
         this.otherExclusive = otherExclusive;
     }
 
     @Override
-    public String showInfo () {
+    public String toString() {
         return "House{" +
+                ", id='" + id + '\'' +
+                ", serviceType='" + serviceType + '\'' +
+                ", rentalType='" + rentalType + '\'' +
+                ", usableArea=" + usableArea +
+                ", rentCost=" + rentCost +
+                ", maxAmountGuest=" + maxAmountGuest +
                 "roomStandard='" + roomStandard + '\'' +
                 ", floors=" + floors +
                 ", otherExclusive='" + otherExclusive + '\'' +
-                ", id='" + id + '\'' +
-                ", serviceType='" + serviceType + '\'' +
-                ", usableArea=" + usableArea +
-                ", rentCost=" + rentCost +
-                ", amountGuests=" + amountGuests +
-                ", rentalType='" + rentalType + '\'' +
                 '}';
     }
 }

@@ -1,23 +1,22 @@
 package model.Facility;
 
 public abstract class Facility {
-    protected String id;
-    protected String serviceType;
-    protected double usableArea;
-    protected double rentCost;
-    protected int amountGuests;
-    protected String rentalType;
-    public abstract String showInfo();
+    protected String id, serviceType, rentalType;
+    protected double usableArea, rentCost;
+    protected int maxAmountGuest;
+//    public abstract String showInfo();
 
     public Facility() {
     }
 
-    public Facility(String id, String serviceType, double usableArea, double rentCost, int amountGuests, String rentalType) {
+    public Facility(String id, String serviceType,
+                    double usableArea, double rentCost,
+                    int maxAmountGuest, String rentalType) {
         this.id = id;
         this.serviceType = serviceType;
         this.usableArea = usableArea;
         this.rentCost = rentCost;
-        this.amountGuests = amountGuests;
+        this.maxAmountGuest = maxAmountGuest;
         this.rentalType = rentalType;
     }
 
@@ -53,12 +52,12 @@ public abstract class Facility {
         this.rentCost = rentCost;
     }
 
-    public int getAmountGuests() {
-        return amountGuests;
+    public int getMaxAmountGuest() {
+        return maxAmountGuest;
     }
 
-    public void setAmountGuests(int amountGuests) {
-        this.amountGuests = amountGuests;
+    public void setAmountGuest(int maxAmountGuest) {
+        this.maxAmountGuest = maxAmountGuest;
     }
 
     public String getRentalType() {

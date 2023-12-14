@@ -3,6 +3,23 @@ package services;
 import model.Person.Customer;
 
 public interface ICustomerService extends Service{
-    void addCustomer(Customer customer);
-    void displayCustomer();
+    @Override
+    default void displayInfo() {
+
+    }
+
+    @Override
+    default void addNew() {
+
+    }
+
+    @Override
+    default void edit() {
+
+    }
+
+    @Override
+    default void delete() {
+
+    }
 }

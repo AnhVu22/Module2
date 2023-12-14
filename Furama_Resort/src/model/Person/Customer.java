@@ -17,7 +17,11 @@ public class Customer extends Person {
         this.address = address;
     }
 
-    public Customer(String id, String name, Date dateOfBirth, String gender, int idNumber, int phoneNumber, String emailAddress, ArrayList<Customer> customerArrayList, String classCustomer, String address) {
+    public Customer(String id, String name,
+                    Date dateOfBirth, String gender,
+                    int idNumber, int phoneNumber,
+                    String emailAddress, ArrayList<Customer> customerArrayList,
+                    String classCustomer, String address) {
         super(id, name, dateOfBirth, gender, idNumber, phoneNumber, emailAddress);
         this.customerArrayList = customerArrayList;
         this.classCustomer = classCustomer;
@@ -25,11 +29,8 @@ public class Customer extends Person {
     }
 
     @Override
-    public String showInfo() {
+    public String toString() {
         return "Customer{" +
-                "customerArrayList=" + customerArrayList +
-                ", classCustomer='" + classCustomer + '\'' +
-                ", address='" + address + '\'' +
                 ", id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
@@ -37,6 +38,9 @@ public class Customer extends Person {
                 ", idNumber=" + idNumber +
                 ", phoneNumber=" + phoneNumber +
                 ", emailAddress='" + emailAddress + '\'' +
+                ", classCustomer='" + classCustomer + '\'' +
+                ", address='" + address + '\'' +
+                "customerArrayList=" + customerArrayList +
                 '}';
     }
 }

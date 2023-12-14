@@ -3,6 +3,23 @@ package services;
 import model.Facility.Facility;
 
 public interface IFacilityService extends Service {
-    void addFacility(Facility facility);
-    void displayFacilities();
+    @Override
+    default void displayInfo() {
+
+    }
+
+    @Override
+    default void addNew() {
+
+    }
+
+    @Override
+    default void edit() {
+
+    }
+
+    @Override
+    default void delete() {
+
+    }
 }

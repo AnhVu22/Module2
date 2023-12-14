@@ -4,9 +4,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class FuramaController {
-    Scanner scanner = new Scanner(System.in);
-
-    public void displayMainMenu() {
+    static Scanner scanner = new Scanner(System.in);
+    public static void displayMainMenu() {
         int menuChoice;
         do {
             System.out.println("FURAMA RESORT MANAGEMENT SYSTEM" + "\n" +
@@ -49,7 +48,7 @@ public class FuramaController {
         } while (menuChoice != 6);
     }
 
-    private void showEmployeeManagement() {
+    private static void showEmployeeManagement() {
         int choice;
         do {
             System.out.println("EMPLOYEE MANAGEMENT" + "\n" +
@@ -84,7 +83,7 @@ public class FuramaController {
         } while (choice != 4);
     }
 
-    private void showCustomerManagement() {
+    private static void showCustomerManagement() {
         int choice;
         do {
             System.out.println("CUSTOMER MANAGEMENT" + "\n" +
@@ -119,7 +118,7 @@ public class FuramaController {
         } while (choice != 4);
     }
 
-    private void showFacilityManagement() {
+    private static void showFacilityManagement() {
         int choice;
         do {
             System.out.println("FACILITY MANAGEMENT" + "\n" +
@@ -153,7 +152,7 @@ public class FuramaController {
             }
         } while (choice != 4);
     }
-    private void showBookingManagement() {
+    private static void showBookingManagement() {
         int choice;
         do {
             System.out.println("BOOKING MANAGEMENT" + "\n" +
@@ -194,7 +193,7 @@ public class FuramaController {
             }
         } while (choice != 6);
     }
-    private void showPromotionManagement() {
+    private static void showPromotionManagement() {
         int choice;
         do {
             System.out.println("PROMOTION MANAGEMENT" + "\n" +
